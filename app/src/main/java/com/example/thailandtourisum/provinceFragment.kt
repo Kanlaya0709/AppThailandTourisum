@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.thailandtourisum.databinding.FragmentProvinceBinding
@@ -24,12 +25,19 @@ class provinceFragment : Fragment() {
             ,R.layout.fragment_province,container,false)
 
         binding.button.setOnClickListener{ view ->
-            view.findNavController().navigate(R.id.action_provinceFragment_to_tourisumFragment)}
+            view.findNavController().navigate(R.id.action_provinceFragment_to_tourisumFragment)
+
+        }
+
+
+
 
 
 
         return  binding.root
     }
+
+
     override fun onStart() {
         super.onStart()
         Timber.i("onStart Called")

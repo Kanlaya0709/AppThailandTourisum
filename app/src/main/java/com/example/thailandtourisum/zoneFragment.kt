@@ -4,6 +4,7 @@ package com.example.thailandtourisum
 import android.database.DatabaseUtils
 import android.os.Bundle
 import android.view.*
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
@@ -24,19 +25,44 @@ class zoneFragment : Fragment() {
             ,R.layout.fragment_zone,container,false)
 
         binding.northernButton.setOnClickListener{ view ->
-            view.findNavController().navigate(R.id.action_zoneFragment_to_provinceFragment)}
+            view.findNavController().navigate(R.id.action_zoneFragment_to_provinceFragment)
+
+            var alert:Int = Toast.LENGTH_SHORT;
+            var toast = Toast.makeText(context,"ยินดีต้อนรับสู่ภาคเหนือ",alert)
+
+            toast.show()}
 
         binding.northeasternButton.setOnClickListener{ view ->
-                view.findNavController().navigate(R.id.action_zoneFragment_to_provinceFragment)}
+                view.findNavController().navigate(R.id.action_zoneFragment_to_provinceFragment)
+
+            var alert:Int = Toast.LENGTH_SHORT;
+            var toast = Toast.makeText(context,"ยินดีต้อนรับสู่ภาคตะวันออกเฉียงเหนือ",alert)
+
+            toast.show()}
 
         binding.southernButton.setOnClickListener{ view ->
-            view.findNavController().navigate(R.id.action_zoneFragment_to_provinceFragment)}
+            view.findNavController().navigate(R.id.action_zoneFragment_to_provinceFragment)
+
+            var alert:Int = Toast.LENGTH_SHORT;
+            var toast = Toast.makeText(context,"ยินดีต้อนรับสู่ภาคเใต้",alert)
+
+            toast.show()}
 
         binding.centralButton.setOnClickListener{ view ->
-            view.findNavController().navigate(R.id.action_zoneFragment_to_provinceFragment)}
+            view.findNavController().navigate(R.id.action_zoneFragment_to_provinceFragment)
+
+            var alert:Int = Toast.LENGTH_SHORT;
+            var toast = Toast.makeText(context,"ยินดีต้อนรับสู่ภาคกลาง",alert)
+
+            toast.show()}
 
         binding.easterButton.setOnClickListener{ view ->
-            view.findNavController().navigate(R.id.action_zoneFragment_to_provinceFragment)}
+            view.findNavController().navigate(R.id.action_zoneFragment_to_provinceFragment)
+
+            var alert:Int = Toast.LENGTH_SHORT;
+            var toast = Toast.makeText(context,"ยินดีต้อนรับสู่ภาคตะวันออก",alert)
+
+            toast.show()}
 
         setHasOptionsMenu(true)
         return  binding.root
